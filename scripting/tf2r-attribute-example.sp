@@ -79,13 +79,6 @@ void OnTakeDamageAlivePost(int victim, int attacker, int inflictor, float damage
 		return;
 	}
 
-	// The weapon the damage came from, which is not always the one the
-	// attacker holds now (a rocket lands after a weapon switch)
-	if (weapon <= MaxClients || !IsValidEntity(weapon) || !TF2R_HasAttributes(weapon))
-	{
-		return;
-	}
-
 	// Ask by class, the way the game does: 0.0 comes back unchanged if the
 	// weapon does not have the attribute. Asking the weapon instead of the
 	// player leaves out the attacker's other weapons.
