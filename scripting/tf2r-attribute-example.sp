@@ -8,13 +8,15 @@
  *
  *     "50000"
  *     {
- *         "name"               "example server attribute"
- *         "attribute_class"    "example_server_attribute"
+ *         "name"                  "example server attribute"
+ *         "attribute_class"       "example_server_attribute"
+ *         "description_string"    "On Hit: move 25% faster for %s1 seconds"
  *         ...
  *     }
  *
- * and makes it "On Hit: move 25% faster for <value> seconds". A weapon gets it
- * like any other attribute:
+ * The description is the line players see on the weapon, with the value in
+ * the place of %s1. The game only shows it: this plugin is what makes it
+ * true. A weapon gets the attribute like any other:
  *
  *     "attributes"
  *     {

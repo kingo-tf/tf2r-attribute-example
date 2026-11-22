@@ -35,15 +35,22 @@ In the server's `scripts/items/items_game_server.txt`, define the attribute:
 	{
 		"name"	"example server attribute"
 		"attribute_class"	"example_server_attribute"
+		"description_string"	"On Hit: move 25% faster for %s1 seconds"
 		"description_format"	"value_is_additive"
-		"hidden"	"1"
-		"effect_type"	"neutral"
+		"hidden"	"0"
+		"effect_type"	"positive"
 		"stored_as_integer"	"0"
 	}
 }
 ```
 
-and put it on an item or prefab. The value is the time in seconds:
+`description_string` is the line players see on the weapon. A server has no
+localization tokens of its own, so the text is written out as it should
+appear, with `%s1` where the value goes. With the value 3 this one reads
+"On Hit: move 25% faster for 3 seconds", in the colour `effect_type` picks.
+The game only shows the line. The plugin has to make it true.
+
+Put the attribute on an item or prefab. The value is the time in seconds:
 
 ```
 "attributes"
