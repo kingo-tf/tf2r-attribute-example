@@ -79,6 +79,11 @@ void OnTakeDamageAlivePost(int victim, int attacker, int inflictor, float damage
 		return;
 	}
 
+	if (weapon <= 0 || !IsValidEntity(weapon))
+	{
+		return;
+	}
+
 	// Ask by class, the way the game does: 0.0 comes back unchanged if the
 	// weapon does not have the attribute. Asking the weapon instead of the
 	// player leaves out the attacker's other weapons.
