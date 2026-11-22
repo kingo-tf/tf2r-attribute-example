@@ -68,7 +68,7 @@ whole format.
 
 ## Building
 
-With the `spcomp64` from that SourceMod build, in `addons/sourcemod/scripting`:
+Every release has the compiled plugin. To build it yourself, use the `spcomp64` from that SourceMod build, in `addons/sourcemod/scripting`:
 
 ```
 ./spcomp64 tf2r-attribute-example.sp
