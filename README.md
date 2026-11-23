@@ -70,7 +70,7 @@ whole format.
 ## Requirements
 
 - A TF2 Rebalanced server
-- The SourceMod build for TF2 Rebalanced, which has the `TF2R_` attribute
+- The [SourceMod build for TF2 Rebalanced](https://github.com/kingo-tf/sourcemod/releases), which has the `TF2R_` attribute
   natives and `tf2r_attributes.inc`
 
 ## Building
